@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    padding-top: 25px;
+}
+
+header ul {
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+main{
+    margin: 20px auto;
+    width: 1140px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 15px;
+}
+
+.text{
+    max-width: 300px;
+}
+
+.post-mircha{
+    max-width: 960px;
+}
+
+.title-mircha{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-mircha{
+    width: 100%;
+}
+
+.text-mircha{
+    font-size: 24px;
+}
