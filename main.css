@@ -13,9 +13,14 @@ header ul {
     display: flex;
 }
 
+li{
+    list-style: none;
+    margin-left: 25px;
+}
+
 a{
     text-decoration: none;
-    margin-left: 25px;
+    
 }
 
 main{
