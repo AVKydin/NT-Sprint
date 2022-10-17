@@ -10,10 +10,10 @@
 <body>
     <header>
         <ul>
-            <li> <a href="index.html">Головна сторінка</a></li>
-            <li><a href="create.html">Створення статті</a></li>
-            <li><a href="post.html">Перегляд статті</a></li>
-            <li><a href="edit.html">Редагування статті</a></li>
+            <li> <a href="index.php">Головна сторінка</a></li>
+            <li><a href="create.php">Створення статті</a></li>
+            <li><a href="post.php">Перегляд статті</a></li>
+            <li><a href="edit.php">Редагування статті</a></li>
         </ul>
     </header>
 </body>
