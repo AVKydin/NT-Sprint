@@ -25,4 +25,4 @@ if($_FILES['image']['size']){
 
 $connection->exec($sql);
 
-header('Location: post.php?id=.$id');
+header('Location: post.php?id='.$id);

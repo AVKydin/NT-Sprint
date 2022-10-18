@@ -6,7 +6,8 @@ $id = $_GET['id'];
 
 $sql = "SELECT * FROM posts WHERE id = '$id'";
 // $result = $connection->query($sql);
-$post = $connection->query($sql)->fetch();
+$result = $connection->query($sql);
+$post = $result->fetch();
 
 ?>
 
@@ -33,11 +34,11 @@ $post = $connection->query($sql)->fetch();
     </header>
     
     <main >
-        <h1><?php echo $post['title']?></h1>
-        <b>Author: <?php echo $post['author']?></b>
+        <h1><?php echo $post['title']; ?></h1>
+        <b>Author: <?php echo $post['author']; ?></b>
         <div class="col-md-4">    
-            <img width="300" src="<?php echo $post['image']?>" alt="">
-            <p><?php echo $post['text']?></p>
+            <img width="300" src="<?php echo $post['image']; ?>" alt="">
+            <p><?php echo $post['text']; ?></p>
         </div>
         <form action="destroy.php" method="post">
             <input type="text" name="id" value="<?php echo $post['id']; ?>" hidden>
