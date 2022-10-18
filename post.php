@@ -1,13 +1,8 @@
 <?php
 
-$host = 'localhost';
-$dbName = 'ntsprint';
-$user = 'root';
-$password = '';
+require_once('connection.php');
 
 $id = $_GET['id'];
-
-$connection = new PDO("mysql:host=$host; dbname= $dbName;", $user, $password);
 
 $sql = "SELECT * FROM posts WHERE id = '$id'";
 // $result = $connection->query($sql);
@@ -48,6 +43,7 @@ $post = $connection->query($sql)->fetch();
             <input type="text" name="id" value="<?php echo $post['id']; ?>" hidden>
             <button class="btn btn-danger">Delete Post</button>
         </form>
+        <a href="/edit.php?id=<?php echo $post['id']; ?>" class="btn btn-success">Edit Post</a>
     </main>
 
 </body>

@@ -1,10 +1,6 @@
 <?php
 
-$host = 'localhost';
-$dbName = 'ntsprint';
-$user = 'root';
-$password = '';
-$connection = new PDO("mysql:host=$host; dbname= $dbName;", $user, $password);
+require_once('connection.php');
 
 // echo '<pre>';
 // print_r($_POST);
